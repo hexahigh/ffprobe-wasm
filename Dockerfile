@@ -72,8 +72,8 @@ RUN cd /tmp/ffmpeg-${FFMPEG_VERSION} && \
   --enable-postproc \
   --enable-swscale \
   --enable-protocol=file \
-  --enable-decoder=h264,aac,pcm_s16le,mp3 \
-  --enable-demuxer=mov,matroska,mp3 \
+  --enable-decoder=h264,aac,pcm_s16le,mp3,opus,ogg \
+  --enable-demuxer=mov,matroska,mp3,ogg,opus \
   --enable-muxer=mp4 \
   --enable-gpl \
   --enable-libx264 \
